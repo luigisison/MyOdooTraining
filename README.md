@@ -1,0 +1,2 @@
+# MyOdooTraining
+Training files, apps
