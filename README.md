@@ -91,6 +91,10 @@
   * ```<filter name'"course" domain="[]" string="Course" context={'group_by' : 'course_id'}/>```
 * Default filter: syntax??
 
+###Enable followers
+* In ```openacademy.py```, add ```_inherit = ["mail.thread"]``` to ```class OpenAcademySession(models.Model)```
+* In ```__openerp__.py```, change ```'depends': ["base"]``` to ```'depends': ["base","mail"]```
+
 ###References
 
 [A guide to Python's function decorators] (http://thecodeship.com/patterns/guide-to-python-function-decorators/)
